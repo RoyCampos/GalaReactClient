@@ -1,7 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component} from 'react';
+import AppRoutes from './routes';
+import {Provider} from 'react-redux';
 
+//Assets
+//-----------CSS
+import './App.css';
+import './css/all.min.css';
+import './css/spaces.css'
+
+//------------JS
+import './assets/js/autocomplete';
+import './assets/js/login';
+import './assets/js/spaces';
+
+
+
+import store from './store';
+
+const App =()=>{
+    return(
+        <AppRoutes />
+    );
+}
+/*
 function App() {
   return (
     <div className="App">
@@ -21,6 +42,6 @@ function App() {
       </header>
     </div>
   );
-}
+}*/
 
 export default App;
